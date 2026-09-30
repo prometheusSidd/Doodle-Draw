@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_focused="true" android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#410A7C" />
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+    <item android:state_focused="false" android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#2C0950" />
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+    <item android:state_focused="false" android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <solid android:color="#8F33FF" />
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+</selector> <!-- For 5 buttons we have to make 5 drawable resources -->
