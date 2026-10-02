@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DrawingApp</string>
+    <string name="brush">Brush</string>
+    <string name="save">Save drawing</string>
+    <string name="gallery">Open gallery</string>
+    <string name="undo">Undo</string>
+    <string name="color_picker">Color picker</string>
+    <string name="purple">#8F33FF</string>
+    <string name="red">#FF0303</string>
+    <string name="green">#56F805</string>
+    <string name="blue">#0233ED</string>
+    <string name="orange">#FF8B03</string>
+    <string name="dialog_yes">dialog_yes</string>
+
+
+</resources>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_l1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/linear_l2">
+
+        <ImageView
+            android:id="@+id/gallery_image"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:contentDescription="@string/gallery"/>
+
+        <com.example.drawingapp.DrawingView
+            android:id="@+id/drawing_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linear_l2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linear_l3"
+        android:layout_marginBottom="-8dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/green_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="22dp"
+            android:background="@drawable/green_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/blue_button"
+            app:layout_constraintStart_toStartOf="@+id/red_button" />
+
+        <ImageButton
+            android:id="@+id/red_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="22dp"
+            android:background="@drawable/red_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/blue_button"
+            app:layout_constraintStart_toStartOf="@+id/red_button" />
+
+        <ImageButton
+            android:id="@+id/purple_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="22dp"
+            android:background="@drawable/purple_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/blue_button"
+            app:layout_constraintStart_toStartOf="@+id/red_button" />
+
+        <ImageButton
+            android:id="@+id/blue_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="22dp"
+            android:background="@drawable/blue_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/orange_button"
+            app:layout_constraintStart_toStartOf="@+id/green_button" />
+
+        <ImageButton
+            android:id="@+id/orange_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="22dp"
+            android:background="@drawable/orange_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/blue_button" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linear_l3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="42dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/brush_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/brush"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/pop" />
+
+        <ImageButton
+            android:id="@+id/save_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/save"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/save" />
+
+        <ImageButton
+            android:id="@+id/gallery_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/gallery"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/gallery" />
+
+        <ImageButton
+            android:id="@+id/undo_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/undo"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/undo" />
+
+        <ImageButton
+            android:id="@+id/color_picker_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/color_picker"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/color_picker" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- 12. Next,  we going to change the brush color  from DrawingView.kt  by setColor(){}-->
+
+
+</RelativeLayout>
